@@ -1,7 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+  
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -18,8 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.grey.shade100,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 5),
+        padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextField(
               controller: _searchController,
@@ -41,7 +46,11 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 25,
+            ),
+            const Text(
+              "Popular",
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             )
           ],
         ),

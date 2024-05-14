@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  bloc_ui_annotation:
+    dependency: "direct main"
+    description:
+      name: bloc_ui_annotation
+      sha256: "5c7aa93e6e855d7f010c621f65c5d31d92d9099a20dd21ef6b16b666a720f433"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3+1"
   boolean_selector:
     dependency: transitive
     description:
